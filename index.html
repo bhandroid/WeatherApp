@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel=" icon" type="image/x-icon" href="icons/favicon (2).ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="fun()">
+    <div id="lode1"></div>
+    <script>
+      var lode = document.getElementById("lode1");
+
+      function fun() {
+        lode.style.display = "none";
+      }
+    </script>
+
+    <canvas id="canvas1" class="div1"> </canvas>
+
+    <div>
+      <h2 class="tit" style="color: orange">Get Weather</h2>
+      <form class="form">
+        <div class="form-row form-group">
+          <div class="aa">
+            <input
+              type="text"
+              class="form-control place"
+              name="city"
+              placeholder="Enter a location Name "
+            />
+            <button type="submit" class="btn btn-primary">search</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="card shadow rounded d-none" id="card">
+        <img class="time card-img-top" src="" alt="image" />
+        <div class="icon bg-light mx-auto text-center">
+          <img src="" alt="image" />
+        </div>
+        <div class="text-muted text-uppercase text-center details">
+          <h5 class="my-3">City Name</h5>
+          <div class="my-3">Weather Condition</div>
+          <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="apiscript.js"></script>
+    <script src="jsscript.js"></script>
+  </body>
+</html>

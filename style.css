@@ -1,0 +1,131 @@
+#lode1{
+   position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('preloder.gif');
+    background-size: 100vw 100vh;
+    z-index: 1;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+  
+    width: 100%;
+    height: 100%;
+    background-color: #33495f;
+    background-image: url('weather.gif') ;
+    background-size:500px 350px;
+    background-repeat: no-repeat;
+  background-position:top;
+
+ 
+}
+.tit{
+
+  text-align: center;
+  margin-top: -90px;
+  color: whitesmoke;
+
+}
+.form{
+   background-color:#33495f ;
+width: 490px;
+margin: 0 auto ;
+margin-top: 180px;
+height: 140px;
+
+}
+
+.place{
+    border: 3px solid orange !important;
+    height: 45px !important ;
+    border-radius: 10px 0px  10px !important;
+}
+input[type="text" ]:focus{
+  box-shadow: none !important;
+ /* border-bottom:  3px solid orange  !important; */
+ border: 3px solid powderblue !important;
+}
+.aa{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    
+}
+.btn{
+    border:3.5px solid orange   !important;
+margin-left: -70px;
+background-color: orange;
+    box-shadow: none !important;
+    border-radius: 0px 0px  10px !important;
+  
+}
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+.icon{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: -50px;
+}
+.hide{
+    display: none;
+}
+.resize{
+    height: 203px;
+    width: 302.3px;
+}
+.size{
+  
+    max-height: 200px;
+}
+.div1{
+    width: 150px;
+    height: 130px;
+    margin-top: -25px;
+}
+@media(max-width:500px){
+    .form{
+     width: 90%;
+
+    }
+    .card {
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .time{
+        height: 320px;
+      
+    }
+    .size{
+
+        max-height: 200px;
+    }
+    .resize{
+        height: 203px;
+        width: 302.3px;
+    }
+    .div1{
+        width: 130px;
+        height: 100px;
+        margin-top: -15px;
+    }
+    .tit{
+        margin-top: -75px; 
+    }
+}
